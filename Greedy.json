@@ -1,0 +1,91 @@
+{
+  "topic": "Greedy Algorithm",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": [
+        "A greedy algorithm is a problem-solving technique that makes the best possible choice at each step with the hope of finding a globally optimal solution.",
+        "It works by choosing the locally optimal option without reconsidering previous decisions.",
+        "Greedy algorithms do not always guarantee the global optimum, but when they do, they provide very efficient solutions.",
+        "They are often used for optimization problems such as finding minimum cost, maximum profit, shortest path, or maximum value.",
+        "Greedy algorithms are simpler and faster than dynamic programming but work only for problems that exhibit specific properties."
+      ]
+    },
+    {
+      "title": "Characteristics",
+      "body": [
+        "Local Optimal Choice: At each step, the algorithm picks the best choice currently available.",
+        "Irrevocable Decisions: Once a choice is made, it cannot be undone.",
+        "No Backtracking: Greedy algorithms do not explore all possibilities.",
+        "Fast and Efficient: Usually run in polynomial time.",
+        "Require Greedy-Choice Property: The global optimal solution can be reached by choosing local optimums.",
+        "Require Optimal Substructure: The optimal solution of the problem contains optimal solutions of its subproblems."
+      ]
+    },
+    {
+      "title": "Steps in Designing a Greedy Algorithm",
+      "body": [
+        "Define the optimization problem clearly.",
+        "Determine the greedy strategy (what local best choice means).",
+        "Verify that the greedy choice leads to an optimal solution.",
+        "Use proofs like Greedy-Choice Property and Optimal Substructure.",
+        "Create an algorithm that builds the solution step-by-step.",
+        "Analyze time and space complexity."
+      ]
+    },
+    {
+      "title": "Popular Greedy Algorithms",
+      "body": [
+        "Activity Selection Problem: Select the maximum number of non-overlapping activities.",
+        "Fractional Knapsack Problem: Choose items with maximum value/weight ratio.",
+        "Huffman Coding: Builds an optimal prefix code for data compression.",
+        "Dijkstra’s Algorithm: Shortest path in graphs with non-negative weights.",
+        "Prim’s Algorithm: Minimum Spanning Tree (MST).",
+        "Kruskal’s Algorithm: Minimum Spanning Tree using sorted edges.",
+        "Job Sequencing Problem: Maximize profit by scheduling jobs with deadlines.",
+        "Coin Change Problem (when denominations are canonical): Minimum coins needed."
+      ]
+    },
+    {
+      "title": "Advantages",
+      "body": [
+        "Easy to implement and understand.",
+        "Highly efficient with low time complexity.",
+        "No need for complex data structures (mostly uses sorting, queues, priority queues).",
+        "Works perfectly for problems with greedy-choice property.",
+        "Produces fast results for large-scale optimization."
+      ]
+    },
+    {
+      "title": "Disadvantages",
+      "body": [
+        "Does not always produce the optimal solution.",
+        "Requires careful proof to ensure correctness.",
+        "May fail for problems that require exploring multiple choices or backtracking.",
+        "Cannot solve problems like 0/1 Knapsack, Traveling Salesman, or Longest Path."
+      ]
+    },
+    {
+      "title": "Time Complexity",
+      "body": [
+        "Depends on the algorithm, but most greedy algorithms work in O(n log n) due to sorting.",
+        "Activity Selection: O(n log n) or O(n) if sorted.",
+        "Huffman Coding: O(n log n).",
+        "Prim’s (using Min-Heap): O(E log V).",
+        "Kruskal’s: O(E log E)."
+      ]
+    },
+    {
+      "title": "Applications",
+      "body": [
+        "Used in networking for shortest path routing (Dijkstra).",
+        "Used in data compression techniques like Huffman coding.",
+        "Used in scheduling and resource allocation problems.",
+        "Used in constructing Minimum Spanning Trees (Prim and Kruskal).",
+        "Used in financial decision-making, such as maximizing returns.",
+        "Used in greedy matching algorithms in graph theory.",
+        "Used in approximation algorithms for NP-hard problems (e.g., Set Cover)."
+      ]
+    }
+  ]
+}
