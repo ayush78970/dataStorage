@@ -1,0 +1,109 @@
+{
+  "topic": "Tree",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": [
+        "A tree is a non-linear hierarchical data structure consisting of nodes connected by edges.",
+        "It is used to represent relationships like hierarchy, dependency, and structure (e.g., file systems, organization charts).",
+        "A tree consists of a root node at the top, and every other node is connected by exactly one path.",
+        "Trees do not contain cycles, making them acyclic structures.",
+        "Each node can have multiple children but only one parent (except the root)."
+      ]
+    },
+    {
+      "title": "Basic Terminologies",
+      "body": [
+        "Node: A fundamental unit of a tree that contains data.",
+        "Root: The topmost node of a tree with no parent.",
+        "Child: A node directly connected below another node.",
+        "Parent: A node directly above another node.",
+        "Siblings: Nodes with the same parent.",
+        "Leaf Node: Node with no children.",
+        "Internal Node: Node with at least one child.",
+        "Edge: Connection between two nodes.",
+        "Degree of Node: Number of children a node has.",
+        "Height of Tree: The longest path from root to any leaf.",
+        "Depth of Node: Distance from root to that node."
+      ]
+    },
+    {
+      "title": "Properties of Trees",
+      "body": [
+        "A tree with N nodes has exactly N−1 edges.",
+        "The root has depth 0, and the height of the tree depends on the deepest leaf.",
+        "A binary tree of height h has a maximum of 2^(h+1) − 1 nodes.",
+        "Level i of a binary tree can contain at most 2^i nodes.",
+        "Trees are naturally recursive structures because each subtree is itself a tree."
+      ]
+    },
+    {
+      "title": "Types of Trees",
+      "body": [
+        "General Tree: A tree where a node can have any number of children.",
+        "Binary Tree: Each node has at most two children (left and right).",
+        "Binary Search Tree (BST): A binary tree where left subtree has smaller values and right subtree has larger values.",
+        "Balanced Tree: Height of left and right subtrees differ by at most one (e.g., AVL, Red-Black Trees).",
+        "AVL Tree: A self-balancing BST where balance factor is maintained between -1 and 1.",
+        "Red-Black Tree: A balanced BST with color properties ensuring logarithmic height.",
+        "Heap: A complete binary tree used for priority queues (Min-Heap, Max-Heap).",
+        "B-Tree: A self-balancing search tree used in databases and filesystems.",
+        "Trie (Prefix Tree): A tree used to store strings character by character.",
+        "Segment Tree: Used for range queries and updates.",
+        "Fenwick Tree (Binary Indexed Tree): Used for prefix sum calculations."
+      ]
+    },
+    {
+      "title": "Tree Traversal Techniques",
+      "body": [
+        "Preorder Traversal: Visit root → left subtree → right subtree.",
+        "Inorder Traversal: Visit left subtree → root → right subtree (useful for sorted order in BST).",
+        "Postorder Traversal: Visit left subtree → right subtree → root.",
+        "Level Order Traversal: Visit nodes level-by-level using a queue.",
+        "Traversal can be done recursively or iteratively using stacks or queues."
+      ]
+    },
+    {
+      "title": "Applications",
+      "body": [
+        "Represent hierarchical data such as folder structures, organization charts, and XML/HTML DOM.",
+        "Used in searching and sorting data efficiently in BST, AVL, and Red-Black Trees.",
+        "Used in priority scheduling using heaps (priority queues).",
+        "Used in compilers for syntax trees, parse trees, and expression trees.",
+        "Used in network routing algorithms and decision-making systems.",
+        "Used in database indexing using B-Trees and B+ Trees.",
+        "Used in AI algorithms like Minimax (game trees)."
+      ]
+    },
+    {
+      "title": "Advantages",
+      "body": [
+        "Provides hierarchical structure for efficient organization of data.",
+        "Faster search, insert, delete in balanced trees (O(log n)).",
+        "Efficient memory usage in many tree types.",
+        "Can represent complex relationships in structured form.",
+        "Recursive structure simplifies many operations and algorithms."
+      ]
+    },
+    {
+      "title": "Disadvantages",
+      "body": [
+        "Unbalanced trees can degrade performance (worst case O(n)).",
+        "Implementation is more complex compared to arrays and linked lists.",
+        "More memory required than linear structures due to pointers.",
+        "Harder to traverse compared to arrays due to non-contiguous memory."
+      ]
+    },
+    {
+      "title": "Time Complexity",
+      "body": [
+        "Binary Search Tree (Average): Search O(log n), Insert O(log n), Delete O(log n).",
+        "Binary Search Tree (Worst Case): O(n) for search/insert/delete (skewed tree).",
+        "AVL Tree: Always O(log n) for search/insert/delete.",
+        "Red-Black Tree: Always O(log n) operations.",
+        "Heap Operations: Insert O(log n), Delete O(log n), Peek O(1).",
+        "Trie Operations: Insert O(L), Search O(L) where L is key length."
+      ]
+    }
+  ]
+}
