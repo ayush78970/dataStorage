@@ -1,0 +1,132 @@
+{
+  "topic": "Recursion and Backtracking",
+  "sections": [
+    {
+      "title": "Introduction to Recursion",
+      "body": [
+        "Recursion is a problem-solving technique in which a function calls itself to solve smaller subproblems.",
+        "Each recursive call works on a smaller input, moving toward a base condition that stops further calls.",
+        "Recursion is widely used in mathematical computations, tree/graph traversal, divide-and-conquer algorithms, and combinatorial problems.",
+        "A recursive function must contain: (1) Base Case — to end recursion, and (2) Recursive Case — the part where the function calls itself.",
+        "Recursion helps break down complex problems into simpler, identical subproblems."
+      ]
+    },
+    {
+      "title": "How Recursion Works",
+      "body": [
+        "Each recursive call is placed on the call stack until it reaches the base case.",
+        "When the base case is reached, the stack begins to unwind, and each call returns its result.",
+        "The call stack stores the state of each function call (parameters, return address, temporary variables).",
+        "Deep recursion may cause stack overflow if too many calls are made.",
+        "Recursion often reduces code complexity but may be less efficient than iteration in some cases."
+      ]
+    },
+    {
+      "title": "Types of Recursion",
+      "body": [
+        "Direct Recursion: A function calls itself directly.",
+        "Indirect Recursion: A function calls another function, which in turn calls the first.",
+        "Tail Recursion: The recursive call is the last operation in the function, allowing optimization.",
+        "Non-Tail Recursion: Additional operations occur after the recursive call.",
+        "Linear Recursion: Only one recursive call per function call.",
+        "Tree Recursion: A function makes multiple recursive calls, creating a tree-like structure (e.g., Fibonacci)."
+      ]
+    },
+    {
+      "title": "Advantages of Recursion",
+      "body": [
+        "Reduces code complexity and increases readability.",
+        "Ideal for problems that follow a natural recursive structure, like trees.",
+        "Useful in divide-and-conquer algorithms (Merge Sort, Quick Sort).",
+        "Makes complex problems easier to describe and solve."
+      ]
+    },
+    {
+      "title": "Disadvantages of Recursion",
+      "body": [
+        "Higher memory usage due to call stack storage.",
+        "May lead to stack overflow for deep or infinite recursion.",
+        "Slower performance due to repeated function calls.",
+        "Requires careful design of base cases to avoid infinite recursion."
+      ]
+    },
+    {
+      "title": "Applications of Recursion",
+      "body": [
+        "Tree traversals (preorder, inorder, postorder).",
+        "Graph traversals (DFS).",
+        "Divide and conquer algorithms: Merge Sort, Quick Sort, Binary Search.",
+        "Mathematical computations like factorial, Fibonacci, GCD.",
+        "Dynamic programming top-down approaches (memoization)."
+      ]
+    },
+    {
+      "title": "Introduction to Backtracking",
+      "body": [
+        "Backtracking is a refined form of recursion used to solve constraint-based problems.",
+        "It builds the solution step-by-step and removes (backtracks) the last step if it leads to an invalid state.",
+        "Backtracking is used for solving problems that require exploring all possibilities to find a valid or optimal solution.",
+        "It follows a depth-first search strategy to explore solution space.",
+        "Backtracking is effective for problems involving combinations, permutations, and decision trees."
+      ]
+    },
+    {
+      "title": "How Backtracking Works",
+      "body": [
+        "Choose a possible option (candidate).",
+        "Recursively explore further decisions based on the chosen candidate.",
+        "If the current path leads to a valid solution, continue; else undo the choice and try another possibility.",
+        "Backtracking systematically explores all paths until a solution is found or all possibilities are exhausted.",
+        "It prunes paths early that are guaranteed not to lead to a solution, making it more efficient than brute force."
+      ]
+    },
+    {
+      "title": "Popular Backtracking Problems",
+      "body": [
+        "N-Queens Problem: Place N queens on a chessboard without conflict.",
+        "Sudoku Solver: Fill a 9x9 grid following sudoku rules.",
+        "Rat in a Maze: Find a valid path through a maze.",
+        "Subset Generation: Generate all subsets of a set.",
+        "Permutation Generation: List all permutations of an array/string.",
+        "Word Search: Find if a word exists in a letter grid.",
+        "Graph Coloring: Assign colors to vertices without adjacent conflicts."
+      ]
+    },
+    {
+      "title": "Advantages of Backtracking",
+      "body": [
+        "More efficient than brute force by pruning invalid paths early.",
+        "General method to solve constraint satisfaction problems.",
+        "Produces exact solutions where greedy or dynamic programming may fail.",
+        "Useful when exploring all possibilities is required."
+      ]
+    },
+    {
+      "title": "Disadvantages of Backtracking",
+      "body": [
+        "May still require exploring a large portion of the search space.",
+        "Worst-case time complexity is often exponential.",
+        "Difficult to design correctly for complex constraints.",
+        "Performance heavily depends on the order of choices and pruning."
+      ]
+    },
+    {
+      "title": "Time Complexity",
+      "body": [
+        "Recursion complexity varies by problem; simple recursion may be O(n), while tree recursion may reach O(2^n).",
+        "Backtracking problems generally have exponential worst-case time complexity, often O(b^d) where b is branching factor and d is depth.",
+        "Effective pruning can significantly reduce average-case complexity."
+      ]
+    },
+    {
+      "title": "Applications of Backtracking",
+      "body": [
+        "Artificial intelligence and search problems.",
+        "Optimization under constraints.",
+        "Game solving (chess, sudoku, puzzles).",
+        "String processing and pattern matching.",
+        "Decision-making systems that require exploring multiple paths."
+      ]
+    }
+  ]
+}
