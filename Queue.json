@@ -1,0 +1,88 @@
+{
+  "topic": "Queue",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": [
+        "A queue is a linear data structure that follows the FIFO (First In, First Out) principle.",
+        "In a queue, the element inserted first is removed first, similar to a real-life queue of people.",
+        "It has two ends: the front (where deletion occurs) and the rear (where insertion occurs).",
+        "Queues can be implemented using arrays, linked lists, or through dynamic memory allocation.",
+        "Queues are used in scheduling, buffering, inter-process communication, and many real-time applications."
+      ]
+    },
+    {
+      "title": "Characteristics",
+      "body": [
+        "Follows FIFO order for insertion and deletion.",
+        "Insertion happens at the rear end of the queue.",
+        "Deletion happens from the front end.",
+        "Efficient for ordered processing of tasks.",
+        "Supports continuous flow of data similar to streaming."
+      ]
+    },
+    {
+      "title": "Types of Queues",
+      "body": [
+        "Simple Queue: Basic FIFO structure where elements are inserted at the rear and removed from the front.",
+        "Circular Queue: Last position is connected back to the first, avoiding wastage of space in a simple queue.",
+        "Priority Queue: Each element has a priority, and elements with higher priority are dequeued first.",
+        "Double-Ended Queue (Deque): Insertion and deletion can occur from both front and rear.",
+        "Input-Restricted Deque: Deletion from both ends, but insertion only at the rear.",
+        "Output-Restricted Deque: Insertion from both ends, but deletion only from the front."
+      ]
+    },
+    {
+      "title": "Operations",
+      "body": [
+        "Enqueue: Adds an element to the rear of the queue.",
+        "Dequeue: Removes the element from the front of the queue.",
+        "Front/Peek: Returns the element at the front without removing it.",
+        "Rear: Returns the last element in the queue.",
+        "isEmpty: Checks if the queue contains no elements.",
+        "isFull: Checks if the queue is full (mainly for fixed-size array queues)."
+      ]
+    },
+    {
+      "title": "Advantages",
+      "body": [
+        "Simple structure for managing data in sequential order.",
+        "Useful for handling real-time data and processes.",
+        "Supports asynchronous data transfer between systems.",
+        "Circular queues efficiently utilize memory by reusing freed space.",
+        "Priority queues help in high-level scheduling and resource allocation."
+      ]
+    },
+    {
+      "title": "Disadvantages",
+      "body": [
+        "Simple queues may lead to memory wastage (front moves forward).",
+        "Fixed size in array-based implementation can cause overflow.",
+        "Access is limited — elements cannot be accessed randomly.",
+        "Priority queues have more complex implementation due to ordering rules."
+      ]
+    },
+    {
+      "title": "Time Complexity",
+      "body": [
+        "Enqueue: O(1) — Insert at the rear.",
+        "Dequeue: O(1) — Remove from the front.",
+        "Peek: O(1) — Directly access the front element.",
+        "Search: O(n) — Must traverse each element in worst case.",
+        "Space Complexity: O(n) — Depends on the number of elements stored."
+      ]
+    },
+    {
+      "title": "Applications",
+      "body": [
+        "Used in CPU scheduling algorithms like FCFS (First Come First Serve).",
+        "Used in disk scheduling and I/O buffer management.",
+        "Used in BFS (Breadth-First Search) graph traversal.",
+        "Used in handling requests in web servers and printers.",
+        "Used in messaging systems and asynchronous communication.",
+        "Used in caching systems and load balancing.",
+        "Used in real-time systems such as call centers, traffic management, and packet switching."
+      ]
+    }
+  ]
+}
