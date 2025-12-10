@@ -1,0 +1,94 @@
+{
+  "topic": "Graph",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": [
+        "A graph is a non-linear data structure consisting of a finite set of vertices (also called nodes) and edges that connect pairs of vertices.",
+        "Graphs are used to represent complex relationships between objects, such as networks, connections, or paths.",
+        "Edges can be directed or undirected, depending on whether the relationship between nodes is one-way or two-way.",
+        "Graphs can also contain weights on edges, representing costs, distances, or capacities.",
+        "Graphs are widely used in real-world systems like social networks, Google Maps, airline routes, and recommendation engines.",
+        "Graphs do not follow sequential memory storage like arrays or linked lists; instead, connections are made logically."
+      ]
+    },
+    {
+      "title": "Types of Graphs",
+      "body": [
+        "Undirected Graph: Edges do not have a direction. If A is connected to B, B is also connected to A.",
+        "Directed Graph (Digraph): Edges have a direction, showing one-way relationships between vertices.",
+        "Weighted Graph: Edges include a weight or cost, such as distance or time.",
+        "Unweighted Graph: All edges have equal weight/importance.",
+        "Cyclic Graph: Contains at least one cycle, meaning a path starts and ends at the same vertex.",
+        "Acyclic Graph: Contains no cycles. Directed acyclic graphs (DAGs) are used in scheduling and dependency resolution.",
+        "Connected Graph: Every vertex is reachable from every other vertex.",
+        "Disconnected Graph: Some vertices cannot be reached from others.",
+        "Complete Graph: Every vertex is connected to every other vertex.",
+        "Sparse Graph: Contains relatively few edges.",
+        "Dense Graph: Contains many edges, nearly close to a complete graph."
+      ]
+    },
+    {
+      "title": "Graph Representation",
+      "body": [
+        "Adjacency Matrix: A 2D matrix where rows represent source vertices and columns represent destination vertices. A value of 1 (or weight) indicates the presence of an edge.",
+        "Adjacency List: A list where each vertex stores a list of connected vertices. It is space-efficient for sparse graphs.",
+        "Edge List: A list of all edges, each represented as a pair (u, v) or a triplet (u, v, w) for weighted graphs.",
+        "Adjacency Matrix is good for dense graphs, while Adjacency List is best for sparse graphs.",
+        "Adjacency List supports faster iteration over neighbors, while Adjacency Matrix supports faster edge existence checking."
+      ]
+    },
+    {
+      "title": "Terminologies",
+      "body": [
+        "Vertex: A node in the graph.",
+        "Edge: Connection between two vertices.",
+        "Degree: Number of edges connected to a vertex.",
+        "In-degree: Number of incoming edges (for directed graphs).",
+        "Out-degree: Number of outgoing edges (for directed graphs).",
+        "Path: Sequence of vertices connected by edges.",
+        "Cycle: A path that starts and ends at the same vertex.",
+        "Adjacent Vertices: Vertices connected by an edge.",
+        "Tree: A special type of acyclic connected graph."
+      ]
+    },
+    {
+      "title": "Algorithms",
+      "body": [
+        "BFS (Breadth-First Search): Traversal algorithm that explores neighbors level by level.",
+        "DFS (Depth-First Search): Traversal algorithm that explores as far down a branch as possible before backtracking.",
+        "Dijkstra’s Algorithm: Finds the shortest path from a source to all vertices in weighted graphs with non-negative weights.",
+        "Bellman-Ford Algorithm: Computes shortest paths even when negative weights are present.",
+        "Floyd-Warshall Algorithm: Dynamic programming algorithm to find shortest paths between all pairs of vertices.",
+        "Prim’s Algorithm: Finds the Minimum Spanning Tree (MST) of a graph using greedy strategy.",
+        "Kruskal’s Algorithm: Builds MST using sorted edges and union-find.",
+        "Topological Sort: Ordering of nodes in a Directed Acyclic Graph (DAG) based on dependencies."
+      ]
+    },
+    {
+      "title": "Time Complexity",
+      "body": [
+        "BFS: O(V + E), where V is vertices and E is edges (using adjacency list).",
+        "DFS: O(V + E), similar to BFS in adjacency list representation.",
+        "Dijkstra (Using Min-Heap): O(E log V).",
+        "Bellman-Ford: O(V × E).",
+        "Floyd-Warshall: O(V³).",
+        "Prim’s (Using Min-Heap): O(E log V).",
+        "Kruskal’s: O(E log E), which is equivalent to O(E log V)."
+      ]
+    },
+    {
+      "title": "Applications",
+      "body": [
+        "Used in social networks to represent friendships, followers, and connections.",
+        "Used in GPS navigation systems to find shortest paths and routes.",
+        "Used in computer networks for routing algorithms and network topology.",
+        "Used in recommendation systems (e.g., YouTube, Netflix, Amazon) to find relationships between users and items.",
+        "Used in search engines like Google to build link analysis algorithms such as PageRank.",
+        "Used in operating systems for task scheduling using DAGs.",
+        "Used in AI algorithms such as state-space search.",
+        "Used in modeling biological networks, such as protein interaction graphs."
+      ]
+    }
+  ]
+}
