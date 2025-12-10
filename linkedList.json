@@ -1,0 +1,66 @@
+{
+  "topic": "Linked List",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": [
+        "A linked list is a linear data structure in which elements are stored in nodes, and each node contains data along with a pointer/reference to the next node.",
+        "Unlike arrays, linked lists do not store elements in contiguous memory locations. The nodes can be scattered anywhere in memory.",
+        "The first node is called the head, and the last node points to NULL (in singly linked list).",
+        "Linked lists support dynamic memory allocation, meaning their size can grow or shrink at runtime without needing to shift elements.",
+        "They are useful when frequent insertions and deletions are required, especially in the middle of the list.",
+        "Different types of linked lists include Singly Linked List, Doubly Linked List, Circular Linked List, and Doubly Circular Linked List."
+      ]
+    },
+    {
+      "title": "Types of Linked Lists",
+      "body": [
+        "Singly Linked List: Each node contains data and a pointer to the next node.",
+        "Doubly Linked List: Each node contains data, a pointer to the next node, and a pointer to the previous node.",
+        "Circular Linked List: The last node points back to the first node instead of pointing to NULL.",
+        "Doubly Circular Linked List: A combination of doubly and circular lists where last node points to first and first node points to last."
+      ]
+    },
+    {
+      "title": "Advantages",
+      "body": [
+        "Dynamic size: Can grow or shrink during runtime.",
+        "Efficient insertions/deletions: No need to shift elements like in arrays.",
+        "Memory utilization: Memory allocated only when needed.",
+        "Flexibility: Useful for implementing stacks, queues, graphs, and adjacency lists."
+      ]
+    },
+    {
+      "title": "Disadvantages",
+      "body": [
+        "No random access: Cannot directly access an element using index (unlike arrays).",
+        "Extra memory: Each node requires extra space for storing pointers.",
+        "Slower traversal: Must start from the head to reach any node.",
+        "Difficult to implement: More complex than arrays due to pointer handling."
+      ]
+    },
+    {
+      "title": "Time Complexity",
+      "body": [
+        "Access: O(n) — Because elements must be traversed from the head to the required index.",
+        "Search: O(n) — Each node is checked one by one.",
+        "Insert at Beginning: O(1) — Only pointer update is required.",
+        "Insert at End: O(n) — Need to traverse up to the last node.",
+        "Insert at Middle: O(n) — Must traverse to the correct position.",
+        "Delete at Beginning: O(1) — Head pointer is updated.",
+        "Delete at End: O(n) — Need to traverse to the second-last node.",
+        "Delete at Middle: O(n) — Must traverse to the correct position before deletion."
+      ]
+    },
+    {
+      "title": "Applications",
+      "body": [
+        "Used in implementing dynamic data structures like stacks and queues.",
+        "Used in adjacency lists for graph representation.",
+        "Used in memory management and operating system scheduling.",
+        "Used in undo/redo operations (doubly linked list).",
+        "Used in music playlists, image slideshow (circular linked list)."
+      ]
+    }
+  ]
+}
