@@ -1,0 +1,84 @@
+{
+  "topic": "Stack",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": [
+        "A stack is a linear data structure that follows the LIFO (Last In, First Out) principle.",
+        "In a stack, the element inserted last is the first one to be removed.",
+        "It can be implemented using arrays, linked lists, or dynamic memory structures.",
+        "All insertion and deletion operations occur only at one end, called the 'top' of the stack.",
+        "Stacks are widely used for undo/redo operations, expression evaluation, function call tracking, and backtracking algorithms."
+      ]
+    },
+    {
+      "title": "Characteristics",
+      "body": [
+        "Follows LIFO order for both insertion and deletion.",
+        "Only one pointer (top) is used to track the last inserted element.",
+        "Efficient for operations that require reversing or backtracking.",
+        "Supports constant-time push and pop operations."
+      ]
+    },
+    {
+      "title": "Operations",
+      "body": [
+        "Push: Inserts an element onto the top of the stack.",
+        "Pop: Removes the top element from the stack.",
+        "Peek/Top: Returns the top element without removing it.",
+        "isEmpty: Checks if the stack is empty.",
+        "isFull: Checks if the stack is full (in case of fixed-size stack)."
+      ]
+    },
+    {
+      "title": "Types of Stacks",
+      "body": [
+        "Static Stack: Implemented using arrays with fixed size.",
+        "Dynamic Stack: Implemented using linked lists, allowing flexible size.",
+        "Double-Ended Stack (Deque-based): Supports push/pop from both ends.",
+        "Min Stack: Special stack that supports retrieval of minimum element in O(1) time.",
+        "Multi-Stack: Implementing multiple stacks in a single array."
+      ]
+    },
+    {
+      "title": "Advantages",
+      "body": [
+        "Simple and easy to implement.",
+        "Push and pop operations are very efficient (O(1)).",
+        "Excellent for problems involving recursion or nested operations.",
+        "Memory utilization is efficient in dynamic stack implementation."
+      ]
+    },
+    {
+      "title": "Disadvantages",
+      "body": [
+        "Limited size in static stack implementation.",
+        "Stack overflow can occur if the stack exceeds its capacity.",
+        "Not suitable for random access because elements can only be accessed from the top.",
+        "Difficult to use for large datasets when using array-based implementation."
+      ]
+    },
+    {
+      "title": "Time Complexity",
+      "body": [
+        "Push: O(1) — Only updates the top pointer.",
+        "Pop: O(1) — Removes the top element.",
+        "Peek: O(1) — Simply returns the top element.",
+        "Search: O(n) — Must check elements one by one.",
+        "Space Complexity: O(n) — Depends on the number of elements stored."
+      ]
+    },
+    {
+      "title": "Applications",
+      "body": [
+        "Function call management in programming languages using the call stack.",
+        "Undo/redo functionality in text editors and design tools.",
+        "Expression evaluation such as postfix, prefix, and infix conversions.",
+        "Balanced parenthesis checking using stack operations.",
+        "Depth-First Search (DFS) for graph traversal.",
+        "Browser history management (back/forward operations).",
+        "Memory management and recursion handling."
+      ]
+    }
+  ]
+}
