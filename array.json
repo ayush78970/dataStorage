@@ -1,0 +1,13 @@
+{
+  "topic": "Array",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": "An array is a linear data structure that stores elements in contiguous memory locations."
+    },
+    {
+      "title": "Time Complexity",
+      "body": "Access: O(1), Search: O(n), Insert: O(n), Delete: O(n)"
+    }
+  ]
+}
