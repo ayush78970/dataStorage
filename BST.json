@@ -1,0 +1,86 @@
+{
+  "topic": "Binary Search Tree (BST)",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": [
+        "A Binary Search Tree (BST) is a binary tree data structure where each node contains a key greater than all keys in its left subtree and smaller than all keys in its right subtree.",
+        "BST enables fast search, insertion, and deletion operations due to its sorted structure.",
+        "Duplicates are generally not allowed (or stored in a consistent manner such as left/right duplicates).",
+        "BST provides the foundation for many advanced data structures like AVL Trees, Red-Black Trees, and Splay Trees."
+      ]
+    },
+    {
+      "title": "Properties",
+      "body": [
+        "Left subtree contains nodes with values less than the node’s key.",
+        "Right subtree contains nodes with values greater than the node’s key.",
+        "In-order traversal of a BST always produces a sorted sequence.",
+        "The height of a BST determines its time complexity (balanced trees are optimal)."
+      ]
+    },
+    {
+      "title": "Operations",
+      "body": [
+        "Search:",
+        "  - Compare target value with root.",
+        "  - Move left if value is smaller, right if larger.",
+        "  - Continue until value is found or null is reached.",
+        "Insertion:",
+        "  - Insert by following the same rule as search.",
+        "  - New node always becomes a leaf.",
+        "Deletion:",
+        "  - Case 1: Node has no children → Delete directly.",
+        "  - Case 2: Node has one child → Replace node with its child.",
+        "  - Case 3: Node has two children → Replace with inorder successor (minimum value in right subtree)."
+      ]
+    },
+    {
+      "title": "Traversal Techniques",
+      "body": [
+        "In-order Traversal (Left → Root → Right): Produces sorted output.",
+        "Pre-order Traversal (Root → Left → Right): Used for copying trees.",
+        "Post-order Traversal (Left → Right → Root): Used for deleting trees.",
+        "Level-order Traversal: BFS traversal using a queue."
+      ]
+    },
+    {
+      "title": "Applications",
+      "body": [
+        "Used in searching and sorting applications.",
+        "Efficient for implementing dictionaries and sets.",
+        "Used in designing memory management algorithms.",
+        "Forms the basis for advanced balanced search trees."
+      ]
+    },
+    {
+      "title": "Advantages",
+      "body": [
+        "Faster search compared to linked lists (if tree remains balanced).",
+        "Dynamic structure — no need for contiguous memory.",
+        "Supports efficient in-order traversal to produce sorted data."
+      ]
+    },
+    {
+      "title": "Disadvantages",
+      "body": [
+        "Performance degrades if tree becomes skewed (like a linked list).",
+        "Requires rotation or balancing techniques (not available in simple BST).",
+        "Deletion can be complex due to multiple cases."
+      ]
+    },
+    {
+      "title": "Time Complexity",
+      "body": [
+        "Best / Average Case:",
+        "  - Search: O(log n)",
+        "  - Insert: O(log n)",
+        "  - Delete: O(log n)",
+        "Worst Case (Skewed Tree):",
+        "  - Search: O(n)",
+        "  - Insert: O(n)",
+        "  - Delete: O(n)"
+      ]
+    }
+  ]
+}
