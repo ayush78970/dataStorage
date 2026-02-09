@@ -1,0 +1,94 @@
+{
+  "topic": "Array",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": [
+        "An Array is a linear data structure that stores elements of the same data type in contiguous memory locations.",
+        "Each element can be accessed directly using its index.",
+        "Arrays provide fast access to elements using index-based addressing.",
+        "They are one of the most fundamental data structures used in programming."
+      ]
+    },
+    {
+      "title": "Properties",
+      "body": [
+        "Stores elements of homogeneous data type.",
+        "Elements are stored in contiguous memory locations.",
+        "Each element is accessed using an index (starting from 0 in most languages).",
+        "Array size is fixed at the time of creation (in static arrays)."
+      ]
+    },
+    {
+      "title": "Operations",
+      "body": [
+        "Access:",
+        "  - Directly access any element using its index.",
+        "Insertion:",
+        "  - Insert element at a specific position.",
+        "  - Shift elements to the right if required.",
+        "Deletion:",
+        "  - Delete element from a specific position.",
+        "  - Shift elements to the left to fill the gap.",
+        "Traversal:",
+        "  - Visit each element of the array sequentially.",
+        "Searching:",
+        "  - Linear Search: Check each element one by one.",
+        "  - Binary Search: Works only on sorted arrays."
+      ]
+    },
+    {
+      "title": "Types of Arrays",
+      "body": [
+        "One-Dimensional Array: Stores elements in a single row.",
+        "Two-Dimensional Array: Stores elements in rows and columns (matrix form).",
+        "Multi-Dimensional Array: Arrays with more than two dimensions.",
+        "Dynamic Array: Size can be changed at runtime (e.g., Vector in C++, ArrayList in Java)."
+      ]
+    },
+    {
+      "title": "Applications",
+      "body": [
+        "Used to store and manage collections of data.",
+        "Used in sorting and searching algorithms.",
+        "Used to represent matrices and tables.",
+        "Used in implementing other data structures like stacks, queues, and heaps."
+      ]
+    },
+    {
+      "title": "Advantages",
+      "body": [
+        "Fast access to elements using index (O(1)).",
+        "Efficient memory utilization due to contiguous allocation.",
+        "Easy to implement and use.",
+        "Suitable for storing large amounts of data of the same type."
+      ]
+    },
+    {
+      "title": "Disadvantages",
+      "body": [
+        "Fixed size (in static arrays) leads to memory wastage or overflow.",
+        "Insertion and deletion operations are costly due to shifting.",
+        "Cannot store different data types together.",
+        "Requires contiguous memory block."
+      ]
+    },
+    {
+      "title": "Time Complexity",
+      "body": [
+        "Access:",
+        "  - O(1)",
+        "Search:",
+        "  - Linear Search: O(n)",
+        "  - Binary Search: O(log n)",
+        "Insertion:",
+        "  - Best Case: O(1)",
+        "  - Worst Case: O(n)",
+        "Deletion:",
+        "  - Best Case: O(1)",
+        "  - Worst Case: O(n)"
+      ]
+    }
+  ]
+}
+// C:\Users\Lenovo\OneDrive\Desktop\c floder\oops\ExamJs
