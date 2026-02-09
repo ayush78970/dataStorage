@@ -4,91 +4,83 @@
     {
       "title": "Introduction",
       "body": [
-        "An Array is a linear data structure that stores elements of the same data type in contiguous memory locations.",
+        "An Array is a linear data structure that stores elements in contiguous memory locations.",
+        "All elements in an array are of the same data type.",
         "Each element can be accessed directly using its index.",
-        "Arrays provide fast access to elements using index-based addressing.",
-        "They are one of the most fundamental data structures used in programming."
+        "Arrays provide fast access to elements but have fixed size in most languages."
       ]
     },
     {
       "title": "Properties",
       "body": [
-        "Stores elements of homogeneous data type.",
-        "Elements are stored in contiguous memory locations.",
-        "Each element is accessed using an index (starting from 0 in most languages).",
-        "Array size is fixed at the time of creation (in static arrays)."
+        "Stores elements in contiguous memory locations.",
+        "Indexing usually starts from 0 in most programming languages.",
+        "All elements are of the same data type.",
+        "Size of array is fixed at the time of creation."
       ]
     },
     {
       "title": "Operations",
       "body": [
         "Access:",
-        "  - Directly access any element using its index.",
+        "  - Directly access elements using index.",
         "Insertion:",
-        "  - Insert element at a specific position.",
-        "  - Shift elements to the right if required.",
+        "  - Insert at a specific index by shifting elements.",
         "Deletion:",
-        "  - Delete element from a specific position.",
-        "  - Shift elements to the left to fill the gap.",
+        "  - Delete an element by shifting remaining elements.",
         "Traversal:",
-        "  - Visit each element of the array sequentially.",
-        "Searching:",
-        "  - Linear Search: Check each element one by one.",
-        "  - Binary Search: Works only on sorted arrays."
+        "  - Visit each element one by one using a loop."
       ]
     },
     {
-      "title": "Types of Arrays",
+      "title": "Traversal Techniques",
       "body": [
-        "One-Dimensional Array: Stores elements in a single row.",
-        "Two-Dimensional Array: Stores elements in rows and columns (matrix form).",
-        "Multi-Dimensional Array: Arrays with more than two dimensions.",
-        "Dynamic Array: Size can be changed at runtime (e.g., Vector in C++, ArrayList in Java)."
+        "Sequential Traversal: Access elements from start to end.",
+        "Reverse Traversal: Access elements from end to start.",
+        "Index-based Traversal: Access using index values.",
+        "Using Iterators: Used in languages like Java and C++."
       ]
     },
     {
       "title": "Applications",
       "body": [
-        "Used to store and manage collections of data.",
-        "Used in sorting and searching algorithms.",
-        "Used to represent matrices and tables.",
-        "Used in implementing other data structures like stacks, queues, and heaps."
+        "Used to store and process lists of data.",
+        "Used in searching and sorting algorithms.",
+        "Used in implementing other data structures like stacks and queues.",
+        "Used in matrices and tables."
       ]
     },
     {
       "title": "Advantages",
       "body": [
-        "Fast access to elements using index (O(1)).",
-        "Efficient memory utilization due to contiguous allocation.",
-        "Easy to implement and use.",
-        "Suitable for storing large amounts of data of the same type."
+        "Fast access using index (O(1)).",
+        "Simple and easy to use.",
+        "Memory-efficient due to contiguous allocation.",
+        "Good for storing fixed-size data."
       ]
     },
     {
       "title": "Disadvantages",
       "body": [
-        "Fixed size (in static arrays) leads to memory wastage or overflow.",
-        "Insertion and deletion operations are costly due to shifting.",
-        "Cannot store different data types together.",
-        "Requires contiguous memory block."
+        "Fixed size (cannot grow dynamically in static arrays).",
+        "Insertion and deletion are costly (O(n)).",
+        "Wastage of memory if size is not fully used.",
+        "Homogeneous elements only (same data type)."
       ]
     },
     {
       "title": "Time Complexity",
       "body": [
-        "Access:",
-        "  - O(1)",
-        "Search:",
-        "  - Linear Search: O(n)",
-        "  - Binary Search: O(log n)",
-        "Insertion:",
-        "  - Best Case: O(1)",
-        "  - Worst Case: O(n)",
-        "Deletion:",
-        "  - Best Case: O(1)",
-        "  - Worst Case: O(n)"
+        "Best / Average Case:",
+        "  - Access: O(1)",
+        "  - Search: O(n)",
+        "  - Insert: O(n)",
+        "  - Delete: O(n)",
+        "Worst Case:",
+        "  - Search: O(n)",
+        "  - Insert: O(n)",
+        "  - Delete: O(n)"
       ]
     }
   ]
 }
-// C:\Users\Lenovo\OneDrive\Desktop\c floder\oops\ExamJs
