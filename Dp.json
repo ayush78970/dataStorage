@@ -1,0 +1,82 @@
+{
+  "topic": "Dynamic Programming (DP)",
+  "sections": [
+    {
+      "title": "Introduction",
+      "body": [
+        "Dynamic Programming (DP) is an algorithmic technique used to solve problems by breaking them into overlapping subproblems.",
+        "It stores the results of subproblems to avoid redundant computations.",
+        "DP is mainly used for optimization problems.",
+        "It improves time complexity compared to naive recursive solutions."
+      ]
+    },
+    {
+      "title": "Properties",
+      "body": [
+        "Problems must have optimal substructure.",
+        "Subproblems must overlap.",
+        "Uses memoization or tabulation.",
+        "Trades space for time."
+      ]
+    },
+    {
+      "title": "Approaches",
+      "body": [
+        "Memoization (Top-Down):",
+        "  - Uses recursion with caching.",
+        "  - Stores results in a map or array.",
+        "Tabulation (Bottom-Up):",
+        "  - Builds solution iteratively.",
+        "  - Solves smaller subproblems first."
+      ]
+    },
+    {
+      "title": "Common Problems",
+      "body": [
+        "Fibonacci Sequence.",
+        "0/1 Knapsack Problem.",
+        "Longest Common Subsequence (LCS).",
+        "Longest Increasing Subsequence (LIS).",
+        "Matrix Chain Multiplication."
+      ]
+    },
+    {
+      "title": "Applications",
+      "body": [
+        "Used in optimization problems.",
+        "Used in resource allocation.",
+        "Used in bioinformatics (sequence alignment).",
+        "Used in game theory problems."
+      ]
+    },
+    {
+      "title": "Advantages",
+      "body": [
+        "Significantly reduces time complexity.",
+        "Avoids repeated calculations.",
+        "Efficient for complex problems.",
+        "Provides optimal solutions."
+      ]
+    },
+    {
+      "title": "Disadvantages",
+      "body": [
+        "Uses extra memory.",
+        "Not all problems can be solved using DP.",
+        "State design can be complex.",
+        "Hard to implement for beginners."
+      ]
+    },
+    {
+      "title": "Time Complexity",
+      "body": [
+        "Best / Average Case:",
+        "  - Depends on number of states.",
+        "  - Usually O(n * states).",
+        "Worst Case:",
+        "  - Can be exponential if not optimized.",
+        "  - Space complexity is also high."
+      ]
+    }
+  ]
+}
